@@ -1,0 +1,86 @@
+.sea-img{
+  width: 100vw;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.profile-card{
+  text-align: center;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.profile-image{
+  grid-column: 2;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  display: block;
+  margin-top: 25px;
+  margin-left: 0px;
+}
+
+.profile-text {
+  grid-column: 3/5;
+  text-align: center;
+  width: 100%;
+}
+
+.name {
+  font-size: 50px;
+  margin: 0;
+}
+
+.bio {
+  font-size: 16px;
+}
+
+.id {
+  grid-column: 2;
+  font-size: 30px;
+}
+
+.line1 {
+  height: 3px;
+  background-color: gray;
+}
+
+.main-card{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+}
+
+.card h2{
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.card ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card li{
+  font-size: 16px;
+}
