@@ -1,4 +1,4 @@
-.sea-img{
+.sea-img {
   width: 100vw;
   height: 200px;
   object-fit: cover;
@@ -6,14 +6,14 @@
   display: block;
 }
 
-.profile-card{
-  text-align: center;
+.profile-card {
+  align-items: center;
   display: grid;
   justify-content: space-between;
   grid-template-columns: repeat(5, 1fr);
 }
 
-.profile-image{
+.profile-image {
   grid-column: 2;
   width: 200px;
   height: 200px;
@@ -40,17 +40,17 @@
   font-size: 16px;
 }
 
-.id {
+.insta-id {
   grid-column: 2;
   font-size: 30px;
 }
 
-.line1 {
+hr {
   height: 3px;
   background-color: gray;
 }
 
-.main-card{
+.main-card {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -58,7 +58,7 @@
   padding: 20px;
 }
 
-.card{
+.card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,18 +69,18 @@
   text-align: center;
 }
 
-.card h2{
+.card h2 {
   font-size: 25px;
   margin-bottom: 10px;
   color: white;
 }
 
-.card ul{
+.card ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.card li{
+.card li {
   font-size: 16px;
 }
