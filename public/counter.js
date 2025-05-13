@@ -1,5 +1,4 @@
 const msg = document.getElementById("message");
-console.log(msg.innerText);
 
 let count = 0;
 const countDisplay = document.getElementById("count");
