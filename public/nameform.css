@@ -1,0 +1,13 @@
+body {
+  text-align: center;
+}
+
+.input-form {
+  width: 600px;
+  height: 20px;
+}
+
+.message {
+  text-size: 15px;
+}
+
