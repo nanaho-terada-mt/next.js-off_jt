@@ -8,33 +8,38 @@ form.addEventListener("submit", (e) => {
 	const profession = document.getElementById("profession").value;
 	const introduce = document.getElementById("introduce").value.trim();
 
-	let hasError = false;
+	try {
+		let hasError = false;
 
-	if (username === "") {
-		document.getElementById("nameError").style.display = "block";
-		hasError = true;
-	} else {
-		document.getElementById("nameError").style.display = "none";
+		if (username === "") {
+			document.getElementById("nameError").style.display = "block";
+			hasError = true;
+		} else {
+			document.getElementById("nameError").style.display = "none";
+		}
+		if (age === "" || age < 18) {
+			document.getElementById("ageError").style.display = "block";
+			hasError = true;
+		} else {
+			document.getElementById("ageError").style.display = "none";
+		}
+
+		if (hasError) {
+			throw new Error("エラー発生！");
+		}
+
+		const data = {
+			name: username,
+			age: age,
+			profession: profession,
+			introduce: introduce,
+		};
+
+		const jsonData = JSON.stringify(data, null, 2);
+
+		console.log(jsonData);
+		alert("送信完了！");
+	} catch (error) {
+		console.error("バリデーションチェック中…", error.message);
 	}
-	if (age === "" || age < 18) {
-		document.getElementById("ageError").style.display = "block";
-		hasError = true;
-	} else {
-		document.getElementById("ageError").style.display = "none";
-	}
-
-	if (hasError) {
-		return;
-	}
-
-	const data = {
-		name: username,
-		age: age,
-		profession: profession,
-		introduce: introduce,
-	};
-
-	const jsonData = JSON.stringify(data, null, 2);
-
-	console.log(jsonData);
 });
