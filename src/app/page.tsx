@@ -1,9 +1,16 @@
-const userName: string = "Yuki";
+import Link from "next/link";
 
-export default function Home() {
+export const metadata = {
+	title: "トップ | メモアプリ",
+};
+
+export default function HomePage() {
 	return (
-		<main>
-			<h1>こんにちは、{userName}さん</h1>
-		</main>
+		<div>
+			<h1>ようこそ！これはメモアプリです。</h1>
+			<nav>
+				<Link href="/memos">メモ一覧を見る</Link>
+			</nav>
+		</div>
 	);
 }
