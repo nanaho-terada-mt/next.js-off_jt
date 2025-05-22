@@ -13,7 +13,7 @@ const memoElement = [
 
 export default function MemosPage() {
 	return (
-		<div>
+		<>
 			<h1>メモ一覧ページ</h1>
 			<ul>
 				{memoElement.map((memo) => (
@@ -22,6 +22,6 @@ export default function MemosPage() {
 					</li>
 				))}
 			</ul>
-		</div>
+		</>
 	);
 }

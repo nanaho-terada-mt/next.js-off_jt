@@ -19,9 +19,9 @@ export default function MemoDetailPage({ params }: Props) {
 	const memo = memoElement[id];
 
 	return (
-		<div>
+		<>
 			<h2>{memo.title}</h2>
 			<p>{memo.content}</p>
-		</div>
+		</>
 	);
 }

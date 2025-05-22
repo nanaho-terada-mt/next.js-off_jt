@@ -6,11 +6,11 @@ export const metadata = {
 
 export default function HomePage() {
 	return (
-		<div>
+		<>
 			<h1>ようこそ！これはメモアプリです。</h1>
 			<nav>
 				<Link href="/memos">メモ一覧を見る</Link>
 			</nav>
-		</div>
+		</>
 	);
 }
