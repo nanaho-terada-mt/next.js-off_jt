@@ -6,13 +6,6 @@ const nextConfig = {
 		appDir: true,
 		turbo: true,
 	},
-	webpack: (config) => {
-		config.watchOptions = {
-			poll: 300,
-			aggregateTimeout: 300,
-		};
-		return config;
-	},
 };
 
-export default nextConfig;
+module.exports = nextConfig;
