@@ -5,10 +5,10 @@ export default function Page() {
 	const message = "めっちゃいいやん！";
 
 	return (
-		<div>
+		<>
 			<p>今日は、{data} です！</p>
 			<p>{message}</p>
 			<LinkButton />
-		</div>
+		</>
 	);
 }
