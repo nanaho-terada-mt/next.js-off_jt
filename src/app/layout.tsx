@@ -18,10 +18,10 @@ export default function RootLayout({
 								<Link href="/about">白</Link>
 							</li>
 							<li>
-								<Link href="/contact">發</Link>
+								<Link href="/rulepage">發</Link>
 							</li>
 							<li>
-								<Link href="/setting">中</Link>
+								<Link href="/spacepage">中</Link>
 							</li>
 						</ul>
 					</nav>
