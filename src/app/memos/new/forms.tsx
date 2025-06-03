@@ -40,7 +40,7 @@ export default function MemoForm() {
 	return (
 		<>
 			<form onSubmit={handleSubmit(onValid, onInvalid)}>
-				<div>
+				<section>
 					<p>タイトル</p>
 					<input
 						{...register("title")}
@@ -48,9 +48,9 @@ export default function MemoForm() {
 						className="border border-gray-300 p-2 rounded"
 					/>
 					{errors.title && <p>{errors.title.message}</p>}
-				</div>
+				</section>
 
-				<div>
+				<section>
 					<p>投稿内容</p>
 					<textarea
 						{...register("content")}
@@ -58,7 +58,7 @@ export default function MemoForm() {
 						className="border border-gray-300 p-2 rounded"
 					/>
 					{errors.content && <p>{errors.content.message}</p>}
-				</div>
+				</section>
 
 				<button type="submit" className="bg-emerald-600 p-4 rounded-lg">
 					投稿！
