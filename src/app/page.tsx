@@ -1,14 +1,16 @@
-import { LinkButton } from "./components/LinkButton";
+import Link from "next/link";
 
-export default function Page() {
-	const data = new Date().toLocaleDateString("Ja-jp");
-	const message = "めっちゃいいやん！";
+export const metadata = {
+	title: "トップ | メモアプリ",
+};
 
+export default function HomePage() {
 	return (
 		<>
-			<p>今日は、{data} です！</p>
-			<p>{message}</p>
-			<LinkButton />
+			<h1>ようこそ！これはメモアプリです。</h1>
+			<nav>
+				<Link href="/memos">メモ一覧を見る</Link>
+			</nav>
 		</>
 	);
 }
