@@ -1,14 +1,11 @@
-import { LinkButton } from "./components/LinkButton";
+import Counter from "./components/Counter";
+import Clock from "./components/Clock";
 
-export default function Page() {
-	const data = new Date().toLocaleDateString("Ja-jp");
-	const message = "めっちゃいいやん！";
-
-	return (
-		<>
-			<p>今日は、{data} です！</p>
-			<p>{message}</p>
-			<LinkButton />
-		</>
-	);
+export default function Index() {
+  return (
+    <section>
+      <Counter />
+      <Clock />
+    </section>
+  );
 }
